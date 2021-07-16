@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ContentProperties DeviceType="Desktop">
+  <Component type="ScriptImage" id="SKIN" x="0" y="0" width="900" height="500"
+             popupOnRightClick="0" fileName="{PROJECT_FOLDER}skin.png">
+    <Component type="ScriptButton" id="Logobutton" x="39" y="168" width="822"
+               height="223" parentComponent="SKIN" filmstripImage="{PROJECT_FOLDER}transparent.png"/>
+  </Component>
+  <Component type="ScriptButton" id="Topboost" x="42" y="5" width="146" height="90"
+             processorId="Top Boost" parameterId="Enabled" filmstripImage="{PROJECT_FOLDER}cablebutton1.png"
+             isPluginParameter="1" pluginParameterName="Input Type"/>
+  <Component type="ScriptSlider" id="Gainknob" x="211" y="47" width="50" height="50"
+             filmstripImage="{PROJECT_FOLDER}knobblack.png" numStrips="31"
+             isPluginParameter="1" pluginParameterName="Gain" processorId="Saturator1"
+             parameterId="Saturation" mode="NormalizedPercentage" suffix="%"
+             middlePosition="0.5" max="0.95"/>
+  <Component type="ScriptSlider" id="Trebleknob" x="269" y="47" width="50"
+             height="50" filmstripImage="{PROJECT_FOLDER}knobblack.png" numStrips="31"
+             isPluginParameter="1" pluginParameterName="Treble" processorId="Treble"
+             parameterId="Gain" mode="Decibel" min="-17" max="17" stepSize="0.1"
+             suffix=" dB" middlePosition="0"/>
+  <Component type="ScriptSlider" id="Bassknob" x="328" y="47" width="50" height="50"
+             filmstripImage="{PROJECT_FOLDER}knobblack.png" numStrips="31"
+             isPluginParameter="1" pluginParameterName="Bass" processorId="Bass"
+             parameterId="Gain" mode="Decibel" min="-17" max="17" stepSize="0.1"
+             suffix=" dB" middlePosition="0"/>
+  <Component type="ScriptSlider" id="Revebknob" x="408" y="47" width="50"
+             height="50" filmstripImage="{PROJECT_FOLDER}knobblack.png" numStrips="31"
+             isPluginParameter="1" pluginParameterName="Reverb" processorId="Reverb"
+             parameterId="WetGain" mode="Decibel" min="-100" max="-7" stepSize="0.1"
+             suffix=" dB" middlePosition="-35" defaultValue="-100" showValuePopup="Above"
+             text="*"/>
+  <Component type="ScriptSlider" id="Tremoloknob" x="467" y="47" filmstripImage="{PROJECT_FOLDER}knobblack.png"
+             width="50" height="50" numStrips="31" isPluginParameter="1" pluginParameterName="Tremolo Amount"
+             processorId="LFO Modulator1" parameterId="Intensity" showValuePopup="Above"/>
+  <Component type="ScriptSlider" id="Speedknob" x="527" y="47" width="50"
+             height="50" filmstripImage="{PROJECT_FOLDER}knobblack.png" numStrips="31"
+             isPluginParameter="1" pluginParameterName="Tremolo Speed" processorId="LFO Modulator1"
+             parameterId="Frequency" mode="TempoSync" max="18" stepSize="1"
+             middlePosition="9" showValuePopup="Above" defaultValue="9"/>
+  <Component type="ScriptSlider" id="Tonecutknob" x="605" y="47" filmstripImage="{PROJECT_FOLDER}knobblack.png"
+             width="50" height="50" numStrips="31" isPluginParameter="1" pluginParameterName="ToneCut"
+             processorId="Tone Cut" parameterId="Freq" mode="Frequency" min="800"
+             max="17000" stepSize="1" suffix=" Hz" middlePosition="4000" defaultValue="17000"/>
+  <Component type="ScriptSlider" id="Ampvolumeknob" x="664" y="47" filmstripImage="{PROJECT_FOLDER}knobblack.png"
+             width="50" height="50" numStrips="31" isPluginParameter="1" pluginParameterName="Volume"
+             processorId="Master" parameterId="Gain" mode="Decibel" min="-100"
+             max="15" stepSize="0.1" suffix=" dB" middlePosition="0"/>
+  <Component type="ScriptSlider" id="PowerDampknob" x="724" y="47" width="50"
+             height="50" filmstripImage="{PROJECT_FOLDER}knobblack.png" numStrips="31"
+             isPluginParameter="1" pluginParameterName="Power Damp" processorId="Power Damp"
+             parameterId="LimiterThreshold" mode="Decibel" min="-50" max="-1"
+             stepSize="0.1" suffix=" dB" middlePosition="-25" showValuePopup="Above"
+             defaultValue="-5"/>
+  <Component type="ScriptButton" id="Powerbutton" x="798" y="44" filmstripImage="{PROJECT_FOLDER}switch_toggle.png"
+             width="56" height="56" pluginParameterName="Bypass" processorId="DRXC30"
+             parameterId="Bypass"/>
+  <Component type="ScriptButton" id="Fxrackbutton" x="44" y="394" width="98"
+             height="38" filmstripImage="{PROJECT_FOLDER}fxpathbutton.png"/>
+  <Component type="ScriptPanel" id="fxrackpanel" x="45" y="235" width="820"
+             height="159" bgColour="16777215" itemColour="0" itemColour2="0"
+             textColour="16777215" saveInPreset="1" visible="0">
+    <Component type="ScriptImage" id="fxpathskin" x="0" y="0" parentComponent="fxrackpanel"
+               width="820" height="159" fileName="{PROJECT_FOLDER}fxpathpanel.png"/>
+    <Component type="ScriptComboBox" id="Irselectorbox" x="156" y="8" parentComponent="fxrackpanel"
+               width="540" items="CELESTION GREEN 2X12 | PREAMP : NEVE73 | MIC: DYN 57&#10;CELESTION GREEN 2X12 | PREAMP : NEVE73 | MIC: DYN 7B&#10;CELESTION GREEN 2X12 | PREAMP : NEVE73 | MIC: CON 47&#10;CELESTION GREEN 2X12 | PREAMP : NEVE73 | MIC: RIBB 44&#10;CELESTION GREEN 2X12 | PREAMP : NEVE73 | MIC: DYN 57 + CON U47&#10;CELESTION GREEN 2X12 | PREAMP : NEVE73 | MIC: DYN 57 + RIBB 44&#10;CELESTION GREEN 2X12 | PREAMP : NEVE73 | MIC: DYN 57 (X2)&#10;CELESTION GREEN 2X12 | PREAMP : NEVE73 | MIC: DYN 57 (X3)&#10;CELESTION GREEN 2X12 | PREAMP : NEVE73 | MIC: DYN 7B + CON U47&#10;CELESTION GREEN 2X12 | PREAMP : NEVE73 | MIC: DYN 7B + RIBB 44&#10;CELESTION GREEN 2X12 | PREAMP : NEVE73 | MIC: DYN 7B + DYN 57&#10;CELESTION GREEN 2X12 | PREAMP : NEVE73 | MIC: CON U47 (X2)&#10;CELESTION GREEN 2X12 | PREAMP : NEVE73 | MIC: CON U47 + RIBB 44&#10;CELESTION GREEN 2X12 | PREAMP : UA610 | MIC: DYN 57&#10;CELESTION GREEN 2X12 | PREAMP : UA610 | MIC: DYN 7B&#10;CELESTION GREEN 2X12 | PREAMP : UA610 | MIC: CON 47&#10;CELESTION GREEN 2X12 | PREAMP : UA610 | MIC: RIBB 44&#10;CELESTION GREEN 2X12 | PREAMP : UA610 | MIC: DYN 57 + CON U47&#10;CELESTION GREEN 2X12 | PREAMP : UA610 | MIC: DYN 57 + RIBB 44&#10;CELESTION GREEN 2X12 | PREAMP : UA610 | MIC: DYN 57 (X2)&#10;CELESTION GREEN 2X12 | PREAMP : UA610 | MIC: DYN 57 (X3)&#10;CELESTION GREEN 2X12 | PREAMP : UA610 | MIC: DYN 7B + CON U47&#10;CELESTION GREEN 2X12 | PREAMP : UA610 | MIC: DYN 7B + RIBB 44&#10;CELESTION GREEN 2X12 | PREAMP : UA610 | MIC: DYN 7B + DYN 57&#10;CELESTION GREEN 2X12 | PREAMP : UA610 | MIC: CON U47 (X2)&#10;CELESTION GREEN 2X12 | PREAMP : UA610 | MIC: CON U47 + RIBB 44"
+               bgColour="16777215" itemColour="3355443" itemColour2="1118481"
+               max="26" text="RECORD PATH SELECTOR"/>
+    <Component type="ScriptSlider" id="cablowcut" x="23" y="78" parentComponent="fxrackpanel"
+               width="48" height="48" filmstripImage="{PROJECT_FOLDER}panelknobsmall.png"
+               numStrips="31" isPluginParameter="1" pluginParameterName="Cab Lowcut"
+               processorId="Cabinet Low" parameterId="Freq" mode="Frequency"
+               min="20" max="450" stepSize="1" suffix=" Hz" middlePosition="120"
+               defaultValue="20" showValuePopup="Below"/>
+    <Component type="ScriptSlider" id="cabhighcut" x="79" y="78" parentComponent="fxrackpanel"
+               width="48" filmstripImage="{PROJECT_FOLDER}panelknobsmall.png"
+               numStrips="31" isPluginParameter="1" pluginParameterName="Cab Highcut"
+               mode="Frequency" min="2000" max="20000" stepSize="1" suffix=" Hz"
+               middlePosition="5000" defaultValue="20000" showValuePopup="Below"
+               processorId="Cabinet High" parameterId="Freq"/>
+    <Component type="ScriptSlider" id="Chorusrateknob" x="229" y="78" parentComponent="fxrackpanel"
+               width="48" filmstripImage="{PROJECT_FOLDER}panelknobsmall.png"
+               numStrips="31" isPluginParameter="1" pluginParameterName="Chorus Rate"
+               mode="NormalizedPercentage" suffix="%" middlePosition="0.5" showValuePopup="Below"
+               processorId="Chorus" parameterId="Rate" defaultValue="0.5"/>
+    <Component type="ScriptSlider" id="Choruswidthknob" x="287" y="78" parentComponent="fxrackpanel"
+               width="48" filmstripImage="{PROJECT_FOLDER}panelknobsmall.png"
+               numStrips="31" isPluginParameter="1" pluginParameterName="Chorus Width"
+               processorId="Chorus" parameterId="Width" mode="NormalizedPercentage"
+               suffix="%" middlePosition="0.5" showValuePopup="Below" defaultValue="0.5"/>
+    <Component type="ScriptSlider" id="ChorusFeedbackknob" x="345" y="78" parentComponent="fxrackpanel"
+               width="48" filmstripImage="{PROJECT_FOLDER}panelknobsmall.png"
+               numStrips="31" isPluginParameter="1" pluginParameterName="Chorus Feedback"
+               processorId="Chorus" parameterId="Feedback" mode="NormalizedPercentage"
+               suffix="%" middlePosition="0.5" showValuePopup="Below" defaultValue="0.5"/>
+    <Component type="ScriptSlider" id="Delaywetknob" x="493" y="78" parentComponent="fxrackpanel"
+               width="48" filmstripImage="{PROJECT_FOLDER}panelknobsmall.png"
+               numStrips="31" isPluginParameter="1" pluginParameterName="Delay Amount"
+               processorId="Delay" parameterId="Mix" mode="NormalizedPercentage"
+               suffix="%" middlePosition="0.5" showValuePopup="Below"/>
+    <Component type="ScriptPanel" id="Delaytimepanel1" x="552" y="78" parentComponent="fxrackpanel"
+               saveInPreset="1" width="48" height="48" bgColour="16777215" itemColour="0"
+               itemColour2="0" textColour="16777215" visible="0">
+      <Component type="ScriptSlider" id="DelayTimeknob1" x="0" y="0" parentComponent="Delaytimepanel1"
+                 width="48" filmstripImage="{PROJECT_FOLDER}panelknobsmall.png"
+                 numStrips="31" isPluginParameter="1" pluginParameterName="Delay time"
+                 mode="Time" max="20000" stepSize="1" middlePosition="1000" showValuePopup="Below"
+                 suffix=" ms"/>
+    </Component>
+    <Component type="ScriptPanel" id="Delaytimepanel2" x="552" y="78" parentComponent="fxrackpanel"
+               saveInPreset="1" width="48" height="48" bgColour="16777215" itemColour="0"
+               itemColour2="0" textColour="16777215">
+      <Component type="ScriptSlider" id="DelayTimeknob2" x="0" y="0" parentComponent="Delaytimepanel2"
+                 width="48" filmstripImage="{PROJECT_FOLDER}panelknobsmall.png"
+                 numStrips="31" isPluginParameter="1" pluginParameterName="Delay time"
+                 mode="TempoSync" max="18" stepSize="1" middlePosition="9" showValuePopup="Below"
+                 defaultValue="9"/>
+    </Component>
+    <Component type="ScriptSlider" id="DelayFeedknob" x="612" y="78" parentComponent="fxrackpanel"
+               width="48" filmstripImage="{PROJECT_FOLDER}panelknobsmall.png"
+               numStrips="31" showValuePopup="Below" mode="NormalizedPercentage"
+               suffix="%" middlePosition="0.5" defaultValue="0.2" isPluginParameter="1"
+               pluginParameterName="Delay Feedback"/>
+    <Component type="ScriptSlider" id="inputknob" x="716" y="32" parentComponent="fxrackpanel"
+               width="40" height="98" filmstripImage="{PROJECT_FOLDER}panelfader.png"
+               numStrips="31" dragDirection="Vertical" showValuePopup="Above"
+               mode="Decibel" min="-100" max="20" stepSize="0.1" suffix=" dB"
+               middlePosition="-18" isPluginParameter="1" pluginParameterName="Input Level"
+               processorId="Input" parameterId="Gain"/>
+    <Component type="ScriptSlider" id="Outputknob" x="768" y="32" parentComponent="fxrackpanel"
+               width="40" height="98" filmstripImage="{PROJECT_FOLDER}panelfader.png"
+               numStrips="31" dragDirection="Vertical" showValuePopup="Above"
+               mode="Decibel" min="-100" max="20" stepSize="0.1" suffix=" dB"
+               middlePosition="-18" isPluginParameter="1" pluginParameterName="Main Level"
+               processorId="Main Out" parameterId="Gain"/>
+    <Component type="ScriptButton" id="Chorusonbutton" x="192" y="75" parentComponent="fxrackpanel"
+               width="30" height="55" filmstripImage="{PROJECT_FOLDER}onoff.png"
+               isPluginParameter="1" pluginParameterName="Chorus ON" processorId="Chorus"
+               parameterId="Bypass"/>
+    <Component type="ScriptButton" id="Delayonbutton" x="457" y="75" parentComponent="fxrackpanel"
+               width="30" height="55" filmstripImage="{PROJECT_FOLDER}onoff.png"
+               isPluginParameter="1" pluginParameterName="Delay ON" processorId="Delay"
+               parameterId="Bypass"/>
+    <Component type="ScriptButton" id="Delaysyncbutton" x="664" y="75" parentComponent="fxrackpanel"
+               width="30" height="55" filmstripImage="{PROJECT_FOLDER}onoff.png"
+               defaultValue="1" isPluginParameter="1" pluginParameterName="Delay Sync"/>
+  </Component>
+  <Component type="ScriptButton" id="Presetbutton" x="184" y="469" width="50"
+             height="29" filmstripImage="{PROJECT_FOLDER}presetbutton.png"/>
+  <Component type="ScriptButton" id="Manualbutton" x="237" y="469" width="41"
+             height="29" filmstripImage="{PROJECT_FOLDER}manualbutton.png"
+             isMomentary="1" saveInPreset="0"/>
+  <Component type="ScriptButton" id="Licensebutton" x="853" y="469" width="41"
+             height="29" filmstripImage="{PROJECT_FOLDER}licensebutton.png"
+             saveInPreset="0"/>
+  <Component type="ScriptPanel" id="Presetpanel" x="25" y="23" width="852"
+             height="417" itemColour2="3506438144" itemColour="3590324224"
+             textColour="2080374783" borderRadius="16" visible="0">
+    <Component type="ScriptFloatingTile" id="Presetbrowser" x="8" y="8" parentComponent="Presetpanel"
+               width="840" height="400" ContentType="PresetBrowser" bgColour="2952790016"
+               itemColour="4291875024" itemColour2="4294951115" Data="{&#13;&#10;  &quot;ShowSaveButton&quot;: true,&#13;&#10;  &quot;ShowExpansionsAsColumn&quot;: false,&#13;&#10;  &quot;ShowFolderButton&quot;: true,&#13;&#10;  &quot;ShowNotes&quot;: false,&#13;&#10;  &quot;ShowEditButtons&quot;: true,&#13;&#10;  &quot;ShowFavoriteIcon&quot;: true,&#13;&#10;  &quot;NumColumns&quot;: 2,&#13;&#10;  &quot;ColumnWidthRatio&quot;: [&#13;&#10;    0.3333333333333333,&#13;&#10;    0.3333333333333333,&#13;&#10;    0.3333333333333333&#13;&#10;  ]&#13;&#10;}"
+               FontSize="13" itemColour3="771751936" Font="American Typewriter"/>
+  </Component>
+  <Component type="ScriptPanel" id="LicensePanel" x="0" y="0" width="898"
+             height="462" itemColour2="3338665984" itemColour="3539992576"
+             textColour="16777215" borderRadius="16" bgColour="16777215" visible="0">
+    <Component type="ScriptLabel" id="SerialInput" x="327" y="199" parentComponent="LicensePanel"
+               bgColour="3405774847" textColour="4278190080" itemColour2="4227858431"
+               itemColour="4294967295" text="" width="240"/>
+    <Component type="ScriptLabel" id="SerialStateLabel" x="327" y="228" parentComponent="LicensePanel"
+               text="" editable="0" width="240" height="9" bgColour="4294901760"/>
+    <Component type="ScriptLabel" id="Description" x="327" y="240" parentComponent="LicensePanel"
+               width="240" height="37" text="" editable="0"/>
+    <Component type="ScriptButton" id="SubmitButton" x="406" y="282" parentComponent="LicensePanel"
+               width="81" height="36" filmstripImage="{PROJECT_FOLDER}submitbutton.png"
+               isMomentary="1" saveInPreset="0"/>
+    <Component type="ScriptLabel" id="Enteryourserial" x="327" y="172" parentComponent="LicensePanel"
+               text="ENTER YOUR SERIAL NUMBER ONCE" width="240" editable="0"/>
+  </Component>
+  <Component type="ScriptLabel" id="AuthorisationDialogue" x="726" y="469"
+             text="Unauthorized" textColour="4294901760" editable="0"/>
+  <Component type="ScriptButton" id="Websitebutton" x="13" y="467" width="165"
+             filmstripImage="{PROJECT_FOLDER}transparent.png" isMomentary="1"
+             saveInPreset="0"/>
+</ContentProperties>

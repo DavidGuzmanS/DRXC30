@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Preset Version="1.0.2">
+  <Content Processor="Interface">
+    <Control type="ScriptButton" id="Logobutton" value="1"/>
+    <Control type="ScriptButton" id="Topboost" value="0"/>
+    <Control type="ScriptSlider" id="Gainknob" value="0.67"/>
+    <Control type="ScriptSlider" id="Trebleknob" value="-6.9"/>
+    <Control type="ScriptSlider" id="Bassknob" value="8.7"/>
+    <Control type="ScriptSlider" id="Revebknob" value="-100"/>
+    <Control type="ScriptSlider" id="Tremoloknob" value="0"/>
+    <Control type="ScriptSlider" id="Speedknob" value="8"/>
+    <Control type="ScriptSlider" id="Tonecutknob" value="4285"/>
+    <Control type="ScriptSlider" id="Ampvolumeknob" value="0.400001"/>
+    <Control type="ScriptSlider" id="PowerDampknob" value="-5"/>
+    <Control type="ScriptButton" id="Powerbutton" value="0"/>
+    <Control type="ScriptButton" id="Fxrackbutton" value="1"/>
+    <Control type="ScriptPanel" id="fxrackpanel" value="0"/>
+    <Control type="ScriptComboBox" id="Irselectorbox" value="13"/>
+    <Control type="ScriptSlider" id="cablowcut" value="20"/>
+    <Control type="ScriptSlider" id="cabhighcut" value="20000"/>
+    <Control type="ScriptSlider" id="Chorusrateknob" value="0.5"/>
+    <Control type="ScriptSlider" id="Choruswidthknob" value="0.5"/>
+    <Control type="ScriptSlider" id="ChorusFeedbackknob" value="0.5"/>
+    <Control type="ScriptSlider" id="Delaywetknob" value="0.38"/>
+    <Control type="ScriptPanel" id="Delaytimepanel1" value="0"/>
+    <Control type="ScriptSlider" id="DelayTimeknob1" value="0"/>
+    <Control type="ScriptPanel" id="Delaytimepanel2" value="0"/>
+    <Control type="ScriptSlider" id="DelayTimeknob2" value="8"/>
+    <Control type="ScriptSlider" id="DelayFeedknob" value="0.58"/>
+    <Control type="ScriptSlider" id="inputknob" value="1.49012e-06"/>
+    <Control type="ScriptSlider" id="Outputknob" value="0"/>
+    <Control type="ScriptButton" id="Chorusonbutton" value="1"/>
+    <Control type="ScriptButton" id="Delayonbutton" value="1"/>
+    <Control type="ScriptButton" id="Delaysyncbutton" value="0"/>
+    <Control type="ScriptButton" id="Presetbutton" value="1"/>
+  </Content>
+  <MidiAutomation/>
+  <MPEData Enabled="0"/>
+</Preset>
